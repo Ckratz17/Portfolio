@@ -1,8 +1,7 @@
 import React from 'react'
 import selfie from '../images/selfie.jpeg'
 
-
-const About = () => {
+export default function About () {
 
     const styles = {
         image: {
@@ -32,5 +31,3 @@ const About = () => {
         </div>
     )
 }
-
-export default About
