@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from 'react-router-dom'
+import '../styles/header.css'
 
 const styles = {
     name: {
@@ -7,7 +8,7 @@ const styles = {
         fontSize: '40px'
     },
     header: {
-      height: '10vh',
+      height: '20vh',
       width: '100%',
       display: 'flex',
       alignItems: 'center',
@@ -36,8 +37,9 @@ export default function Header() {
     return (
 
         <div className="header" style={styles.header}>
-
-            <div style={styles.name}>Christopher Kratz</div>
+            <div className="typewriter">
+                <h2 style={styles.name}>Christopher Kratz</h2>
+            </div>
 
             <div style={styles.navItems} className="links">
                 <Link to={'/'}
