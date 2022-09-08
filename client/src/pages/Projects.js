@@ -1,4 +1,5 @@
 import React from 'react'
+import HTMLFlipBook from "react-pageflip";
 
 export default function Project() {
     return (
