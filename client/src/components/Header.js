@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const styles = {
     name: {
-        paddingRight: '85px',
+        
         fontSize: '40px'
     },
     header: {
