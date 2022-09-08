@@ -1,0 +1,20 @@
+{
+  "name": "portfoliio",
+  "version": "1.0.0",
+  "description": "Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ckratz17/Portfoliio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ckratz17/Portfoliio/issues"
+  },
+  "homepage": "https://github.com/Ckratz17/Portfoliio#readme"
+}
