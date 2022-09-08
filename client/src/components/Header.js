@@ -2,47 +2,67 @@ import React from "react";
 import { Link } from 'react-router-dom'
 
 const styles = {
+    name: {
+        paddingRight: '85px',
+        fontSize: '40px'
+    },
     header: {
-        height: '150px',
-        display: 'flex',
-        alignItems: 'center'
+      height: '10vh',
+      width: '100%',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'space-between',
+      position: 'sticky',
+      top: '0',
+      boxShadow: '0 2px 6px -2px rgba(0,0,0,.2)',
+      zIndex: '400'
     },
     link: {
         fontFamily: 'Courier New',
         fontSize: '20px',
-        color: 'black'
+        color: 'black',
+        padding: '20px',
+        textAlign: 'right'
+    },
+    navItems: {
+        textAlign: 'right',
+        display: 'flex',
+        listStyleType: 'none',
+        
     }
 }
 
-function Header ({ currentPage, handlePageChange }) {
+export default function Header() {
     return (
 
-        <header className="header" style={styles.header}>  
+        <div className="header" style={styles.header}>
 
-            <h1>Christopher Kratz</h1>
+            <div style={styles.name}>Christopher Kratz</div>
 
-            <ul className="nav justify-content-end align-items-center">
-                <li className="nav-item">
-                    <Link to={'/projects'}
+            <div style={styles.navItems} className="links">
+                <Link to={'/'}
                     style={styles.link}>
-                        Portfolio
-                    </Link>
-                </li>
-                <li className="nav-item">
-                    <Link to={'/contact'}
+                    About
+                </Link>
+
+                <Link to={'/projects'}
                     style={styles.link}>
-                        Contact
-                    </Link>
-                </li>
-                <li className="nav-item">
-                    <Link to={'/resume'}
+                    Portfolio
+                </Link>
+
+
+                <Link to={'/contact'}
                     style={styles.link}>
-                        Resume
-                    </Link>
-                </li>
-            </ul>
-        </header>      
+                    Contact
+                </Link>
+
+
+                <Link to={'/resume'}
+                    style={styles.link}>
+                    Resume
+                </Link>
+            </div>
+        </div>
     )
 }
 
-export default Header
