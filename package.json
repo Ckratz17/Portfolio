@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Ckratz17/Portfoliio/issues"
   },
-  "homepage": "https://github.com/Ckratz17/Portfoliio#readme"
+  "homepage": "https://github.com/Ckratz17/Portfoliio#readme",
+  "dependencies": {
+    "react-router-dom": "^6.3.0"
+  }
 }
