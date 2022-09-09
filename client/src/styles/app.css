@@ -1,0 +1,64 @@
+.flip-book {
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+  display: none;
+  background-size: cover;
+}
+
+.page {
+  background-color: rgb(228, 210, 191);
+  color: hsl(35, 35, 35);
+  border: solid 1px hsl(35, 20, 70);
+  overflow: hidden;
+}
+
+.title {
+  font-family: cursive;
+  font-size: 50px;
+}
+
+.title-content {
+  display: flex;
+  justify-content: center;
+  position: center;
+}
+
+.page-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.page-header {
+  height: 30px;
+  font-size: 100%;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.page-image {
+  height: 100%;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.page-text {
+  height: 100%;
+  flex-grow: 1;
+  font-size: 80%;
+  text-align: justify;
+  margin-top: 10px;
+  padding-top: 10px;
+  box-sizing: border-box;
+  border-top: solid 1px hsl(35, 55, 90);
+}
+
+.page-footer {
+  height: 30px;
+  border-top: solid 1px hsl(35, 55, 90);
+  font-size: 80%;
+  color: hsl(35, 20, 50);
+}

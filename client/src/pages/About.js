@@ -5,18 +5,21 @@ export default function About () {
 
     const styles = {
         image: {
-            width: "200px"
+            width: "408px",
+            height: '537px',
+            margin: '25px'
         },
         bio: {
             fontFamily: 'Cambira',
             fontSize: '25px',
+        },
+        display: {
+            display: 'flex'
         }
     }
 
     return(
-       <div className="aboutMe">
-            <h1 className="aboutHead">About Me</h1>
-
+       <div style={styles.display} className="aboutMe">
             <div className="image">
                 <img style={styles.image} className="selfie" src={selfie} alt=""></img>
             </div>

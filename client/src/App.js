@@ -5,7 +5,7 @@ import About from './pages/About'
 import Contact from './pages/Contact'
 import Projects from './pages/Projects'
 import Resume from './pages/Resume'
-
+import Footer from './components/Footer';
 
 
 function App() {
@@ -34,6 +34,9 @@ function App() {
             element={<Resume />}
           />
           </Routes>
+        </div>
+        <div>
+          <Footer />
         </div>
       </Router>
 
