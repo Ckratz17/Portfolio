@@ -11,16 +11,34 @@
   overflow: hidden;
 }
 
+.page-cover {
+  background-color: rgb(151,87,43);
+  color: hsl(35, 35, 35);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  border-right: groove 8px;
+}
+
 .title {
   font-family: cursive;
-  font-size: 50px;
+  font-size: 70px;
+  color:  rgb(83, 46, 33);
+  text-shadow: 0px 1px 0px rgba(255,255,255,.3), 0px -1px 0px rgba(0,0,0,.7);
+  border-left: 2px dashed;
+  height: 100%;
+  margin: 0;
+  padding: 60% 5%;
 }
 
 .title-content {
   display: flex;
   justify-content: center;
-  position: center;
+  font-size: 210vh;
+  text-align: center;
 }
+
 
 .page-content {
   width: 100%;

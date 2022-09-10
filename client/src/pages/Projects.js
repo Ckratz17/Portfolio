@@ -9,7 +9,7 @@ import Carded from '../images/Carded.png'
 
 const PageCover = React.forwardRef((props, ref) => {
     return (
-        <div className="page page-cover" ref={ref} data-density="hard">
+        <div className="page-cover" ref={ref} data-density="hard">
             <div className="title-content">
                 <div className='title'>{props.children}</div>
             </div>
@@ -24,6 +24,7 @@ const Page = React.forwardRef((props, ref) => {
                 <h2 className="page-header">{props.title}</h2>
                 <div className="page-image" variant="top" src={props.img} alt="deployed application"></div>
                 <div className="page-text">{props.description}</div>
+                <div className='github-link'>{props.ghLink}</div>
                 <div className="page-footer">{props.number + 1}</div>
             </div>
         </div>
