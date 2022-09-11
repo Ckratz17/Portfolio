@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:ital,wght@1,300&family=Roboto:ital,wght@1,700&display=swap');
+
+.container {
+  background-color: black;
+}
+
 .flip-book {
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
   display: none;
@@ -14,11 +20,10 @@
 .page-cover {
   background-color: rgb(151,87,43);
   color: hsl(35, 35, 35);
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
   overflow: hidden;
   position: relative;
-  border-right: groove 8px;
 }
 
 .title {
@@ -54,6 +59,7 @@
   font-size: 100%;
   text-transform: uppercase;
   text-align: center;
+  font-family: Open-Sans
 }
 
 .page-image {
@@ -72,6 +78,9 @@
   padding-top: 10px;
   box-sizing: border-box;
   border-top: solid 1px hsl(35, 55, 90);
+  padding-right: 35px;
+  padding-left: 10px;
+  font-family: Montserrat;
 }
 
 .page-footer {

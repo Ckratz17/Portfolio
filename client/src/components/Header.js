@@ -20,7 +20,6 @@ const styles = {
       backgroundColor: 'black'
     },
     link: {
-        fontFamily: 'Courier New',
         fontSize: '20px',
         color: 'white',
         padding: '20px',

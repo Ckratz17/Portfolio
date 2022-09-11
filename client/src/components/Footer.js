@@ -9,7 +9,7 @@ export default function Footer () {
             justifyContent: "center",
             height: '25%',  
             backgroundColor: 'black',
-            paddingTop: '75px' 
+            paddingTop: '100px' 
         },
         footerText: {
             color: 'white',
@@ -18,7 +18,7 @@ export default function Footer () {
             padding: '0px 30px'
         },
         footerIcon: {
-            width: '10vw',
+            height: '40px',
             marginTop: '7px',
             minWidth: '100px'
         }
@@ -26,13 +26,13 @@ export default function Footer () {
     return (
         <footer style={styles.footerStyle}>
             <div>
-                <a style={styles.footerIcon} href='https://github.com/Ckratz17'><FaGithub /></a>
+                <a href='https://github.com/Ckratz17'><FaGithub style={styles.footerIcon} /></a>
             </div>
             <div>
                 <h1 style={styles.footerText}>Designed and Developed by Chris Kratz</h1>
             </div>
             <div>
-                <a href='https://www.linkedin.com/in/christopher-kratz-2a0714247/'><FaLinkedin /></a>
+                <a href='https://www.linkedin.com/in/christopher-kratz-2a0714247/'><FaLinkedin style={styles.footerIcon} /></a>
             </div>
         </footer>
     )

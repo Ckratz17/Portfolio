@@ -1,6 +1,6 @@
 import React from 'react'
 import selfie from '../images/profilePic.jpeg'
-
+import '../styles/about.css'
 export default function About () {
 
     const styles = {
@@ -13,7 +13,8 @@ export default function About () {
             fontFamily: 'Cambira',
             fontSize: '25px',
             color: 'white',
-            padding: '10px 60px'
+            padding: '10px 60px',
+            marginBottom: '100px'
         },
         bioTitle: {
             fontSize: '35px',

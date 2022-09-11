@@ -47,10 +47,9 @@ class DemoBook extends React.Component {
         });
     };
 
-
     render() {
         return (
-            <div>
+            <div className='container'>
                 <HTMLFlipBook
                     width={550}
                     height={733}
