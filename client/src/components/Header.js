@@ -4,7 +4,7 @@ import '../styles/header.css'
 
 const styles = {
     name: {
-        
+        color: 'red',
         fontSize: '40px'
     },
     header: {
@@ -16,20 +16,20 @@ const styles = {
       position: 'sticky',
       top: '0',
       boxShadow: '0 2px 6px -2px rgba(0,0,0,.2)',
-      zIndex: '400'
+      zIndex: '400',
+      backgroundColor: 'black'
     },
     link: {
         fontFamily: 'Courier New',
         fontSize: '20px',
-        color: 'black',
+        color: 'white',
         padding: '20px',
         textAlign: 'right'
     },
     navItems: {
         textAlign: 'right',
         display: 'flex',
-        listStyleType: 'none',
-        
+        listStyleType: 'none', 
     }
 }
 

@@ -68,7 +68,7 @@ class DemoBook extends React.Component {
                     className="demo-book"
                     ref={(el) => (this.flipBook = el)}>
 
-                    <PageCover >My Projects</PageCover>
+                    <PageCover>My Projects</PageCover>
 
                     <Page
                         title="J.A.T.E"
@@ -119,7 +119,7 @@ class DemoBook extends React.Component {
                         number={5}>
                     </Page>
 
-                    <PageCover></PageCover>
+                    <PageCover>Created by Chris Kratz</PageCover>
                 </HTMLFlipBook>
             </div>
         )

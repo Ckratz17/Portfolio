@@ -24,7 +24,7 @@ export default function Resume() {
             </h1>
         </div>
         <div className="frontSkills">
-           <div style={styles.title} className="title">Front End Skills</div> 
+           <div style={styles.title}>Front End Skills</div> 
            <ul>
               <li>HTML</li>
               <li>CSS</li>
@@ -34,7 +34,7 @@ export default function Resume() {
            </ul> 
         </div>
         <div className="backSkills">
-           <div style={styles.title} className="title">Back End Skills</div> 
+           <div style={styles.title}>Back End Skills</div> 
            <ul>
               <li>NODEjs</li>
               <li>EXPRESS</li>
