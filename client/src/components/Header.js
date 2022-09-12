@@ -51,13 +51,6 @@ export default function Header() {
                     Portfolio
                 </Link>
 
-
-                <Link to={'/contact'}
-                    style={styles.link}>
-                    Contact
-                </Link>
-
-
                 <Link to={'/resume'}
                     style={styles.link}>
                     Resume

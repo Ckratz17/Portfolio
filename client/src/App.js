@@ -2,7 +2,6 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header'
 import About from './pages/About'
-import Contact from './pages/Contact'
 import Projects from './pages/Projects'
 import Resume from './pages/Resume'
 import Footer from './components/Footer';
@@ -20,10 +19,6 @@ function App() {
           <Route
             path="/"
             element={<About />}
-          />
-          <Route
-            path="/contact"
-            element={<Contact />}
           />
           <Route
             path="/projects"

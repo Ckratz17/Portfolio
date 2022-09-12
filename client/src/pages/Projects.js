@@ -6,6 +6,9 @@ import Weather from "../images/weather.png"
 import BVM from "../images/BVM.png"
 import CarbonCombatters from "../images/CarbonCombatters.png"
 import Carded from '../images/Carded.png'
+import WorkDay from '../images/workDay.png'
+import { FaGithub } from 'react-icons/fa'
+import { CgWebsite } from "react-icons/cg";
 
 const PageCover = React.forwardRef((props, ref) => {
     return (
@@ -17,14 +20,38 @@ const PageCover = React.forwardRef((props, ref) => {
     );
 });
 
+const styles = {
+    iconStyle: {
+        height: '75px',
+        minWidth: '100px',
+        color: 'black'
+    },
+    links: {
+        display: 'flex',
+        justifyContent: 'center'
+    },
+    demo: {
+        textAlign: 'center'
+    }
+}
+
 const Page = React.forwardRef((props, ref) => {
     return (
         <div className="page" ref={ref}>
             <div className="page-content">
                 <h2 className="page-header">{props.title}</h2>
-                <div className="page-image" variant="top" src={props.img} alt="deployed application"></div>
+                <img className="page-image" variant="top" src={props.img} alt="deployed application"></img>
                 <div className="page-text">{props.description}</div>
-                <div className='github-link'>{props.ghLink}</div>
+                <div style={styles.links}>
+                   <div>
+                    <p style={styles.demo}>GitHub</p>
+                    <a className='page-links' href={props.ghLink}><FaGithub style={styles.iconStyle}/></a>
+                   </div> 
+                   <div>
+                    <p style={styles.demo}>Demo</p>
+                    <a className='page-links' href={props.demoLink}><CgWebsite style={styles.iconStyle}/></a>
+                   </div>
+                </div>
                 <div className="page-footer">{props.number + 1}</div>
             </div>
         </div>
@@ -102,11 +129,11 @@ class DemoBook extends React.Component {
                         number={4}>
                     </Page>
                     <Page
-                        img={Carded}
-                        title="Carded"
-                        description="Carded is your online business card solution with team creation to keep your businesses organized."
-                        ghLink="https://github.com/DRCallaghan/Carded"
-                        demoLink="https://get-carded.herokuapp.com/"
+                        img={WorkDay}
+                        title="Day Planner"
+                        description="."
+                        ghLink="https://github.com/Ckratz17/Work_Schedule"
+                        demoLink="https://ckratz17.github.io/Work_Schedule/"
                         number={5}>
                     </Page>
                     <Page
@@ -115,7 +142,7 @@ class DemoBook extends React.Component {
                         description="Carded is your online business card solution with team creation to keep your businesses organized."
                         ghLink="https://github.com/DRCallaghan/Carded"
                         demoLink="https://get-carded.herokuapp.com/"
-                        number={5}>
+                        number={6}>
                     </Page>
 
                     <PageCover>Created by Chris Kratz</PageCover>

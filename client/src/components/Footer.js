@@ -1,5 +1,6 @@
 import React from 'react'
-import { FaGithub, FaLinkedin } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, } from 'react-icons/fa'
+import { GoMail } from 'react-icons/go'
 
 export default function Footer () {
     const styles = {
@@ -26,6 +27,11 @@ export default function Footer () {
     return (
         <footer style={styles.footerStyle}>
             <div>
+                <p style={styles.footerText}>Email Me</p>
+                <a href={`mailto: ckratz17@gmail.com`}><GoMail style={styles.footerIcon} /></a>
+            </div>
+            <div>
+                <p style={styles.footerText}>View My Work</p>
                 <a href='https://github.com/Ckratz17'><FaGithub style={styles.footerIcon} /></a>
             </div>
             <div>

@@ -18,7 +18,9 @@
 }
 
 .page-cover {
-  background-color: rgb(151,87,43);
+  background-image: url('../images/redCover.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
   color: hsl(35, 35, 35);
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -29,12 +31,11 @@
 .title {
   font-family: cursive;
   font-size: 70px;
-  color:  rgb(83, 46, 33);
+  color:  #232220;
   text-shadow: 0px 1px 0px rgba(255,255,255,.3), 0px -1px 0px rgba(0,0,0,.7);
-  border-left: 2px dashed;
   height: 100%;
   margin: 0;
-  padding: 60% 5%;
+  padding-top: 50%;
 }
 
 .title-content {
@@ -64,13 +65,14 @@
 
 .page-image {
   height: 100%;
+  width: 95%;
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
 }
 
 .page-text {
-  height: 100%;
+  padding-bottom: 50px;
   flex-grow: 1;
   font-size: 80%;
   text-align: justify;
