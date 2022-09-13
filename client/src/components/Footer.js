@@ -21,23 +21,31 @@ export default function Footer () {
         footerIcon: {
             height: '40px',
             marginTop: '7px',
-            minWidth: '100px'
+            minWidth: '100px',
+            color: '#551A8B'
+        },
+        footerMain: {
+            color: 'white',
+            fontSize: '30px',
+            textAlign: 'center',
+            padding: '0px 30px'
         }
     }
     return (
         <footer style={styles.footerStyle}>
-            <div>
-                <p style={styles.footerText}>Email Me</p>
+            <div style={styles.footerText}>
+                <p>Email Me</p>
                 <a href={`mailto: ckratz17@gmail.com`}><GoMail style={styles.footerIcon} /></a>
             </div>
-            <div>
-                <p style={styles.footerText}>View My Work</p>
+            <div style={styles.footerText}>
+                <p>View My Work</p>
                 <a href='https://github.com/Ckratz17'><FaGithub style={styles.footerIcon} /></a>
             </div>
             <div>
-                <h1 style={styles.footerText}>Designed and Developed by Chris Kratz</h1>
+                <h1 style={styles.footerMain}>Designed and Developed by Chris Kratz</h1>
             </div>
-            <div>
+            <div style={styles.footerText}>
+                <p>View My LinkedIn</p>
                 <a href='https://www.linkedin.com/in/christopher-kratz-2a0714247/'><FaLinkedin style={styles.footerIcon} /></a>
             </div>
         </footer>

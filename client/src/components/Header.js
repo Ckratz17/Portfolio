@@ -4,7 +4,7 @@ import '../styles/header.css'
 
 const styles = {
     name: {
-        color: 'red',
+        color: '#551A8B',
         fontSize: '40px'
     },
     header: {
