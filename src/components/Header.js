@@ -32,7 +32,7 @@ const styles = {
     }
 }
 
-export default function Header() {
+export default function Header({ currentPage, handlePageChange}) {
     return (
 
         <div className="header" style={styles.header}>
@@ -41,20 +41,26 @@ export default function Header() {
             </div>
 
             <div style={styles.navItems} className="links">
-                <Link to={'/'}
+                <a href="#about"
+                    onClick={() => handlePageChange('About')}
+                    className={currentPage === 'About' ? 'nav-link active': 'nav-link'}
                     style={styles.link}>
-                    About
-                </Link>
+                        About
+                </a>
 
-                <Link to={'/projects'}
+                <a href="#portfolio"
+                    onClick={() => handlePageChange('Portfolio')}
+                    className={currentPage === 'Portfolio' ? 'nav-link active': 'nav-link'}
                     style={styles.link}>
-                    Portfolio
-                </Link>
+                        Portfolio
+                </a>
 
-                <Link to={'/resume'}
+                <a href="#resume"
+                    onClick={() => handlePageChange('Resume')}
+                    className={currentPage === 'Resume' ? 'nav-link active': 'nav-link'}
                     style={styles.link}>
-                    Resume
-                </Link>
+                        Resume
+                    </a>
             </div>
         </div>
     )
